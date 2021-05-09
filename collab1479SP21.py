@@ -42,7 +42,7 @@ def main():
     jumpTable['15'] = stub                # Smith, C - call to function goes here
     jumpTable['16'] = stub                # Smith, J - call to function goes here
     jumpTable['17'] = stub                # Stout - call to function goes here
-    jumpTable['18'] = stub                # Syed - call to function goes here
+    jumpTable['18'] = syedFunction                # Syed - call to function goes here
     jumpTable['19'] = stub                # Watts - call to function goes here
     jumpTable['20'] = stub                # Woolard - call to function goes here
 
@@ -113,6 +113,80 @@ def showMenu():
 #  
 # FunctionName:  lastnameFunction(your parameters)
 # *****************************************************************************************
+
+def syedFunction():
+    #   Function written by Usman Syed
+    #   This function presents the user with a menu to view various
+    #   ASCII art
+    
+    print("\nWelcome to the ASCII Art Viewer!\n")
+    
+    userChoice451 = ""
+    
+    # Show menu to user
+    while( userChoice451 != "x" ):
+        
+        print("""\nArt Selector
+        (a) Troll
+        (b) Plane
+        (c) Money Tree
+        (x) Exit menu & program""")
+        userChoice451 = input("\nArt selector. Please make a valid selection -->  ")
+        
+        
+        if userChoice451 == "a":
+            print("\nPrinting troll...\n")
+            printUsmanTroll()
+        elif userChoice451 == "b":
+            print("\nPrinting plane...\n")
+            printUsmanPlane()
+        elif userChoice451 == "c":
+            print("\nPrinting money tree...\n")
+            printUsmanTree()
+        elif userChoice451 == "x":
+            print("\nThank you! Exiting menu...\n")
+        else:
+            print("Incorrect selection! Please make a valid menu selection...")
+            continue
+    
+    print("\nASCII Art Viewer has now ended. syedFunction() terminated!\n")
+
+
+def printUsmanTroll():
+    #   Function written by Usman Syed
+    print("         \\|||/")
+    print("         (o o)")
+    print("|~~~~ooO~~(_)~~~~~~~|")
+    print("|    BOO!!!         |")
+    print("|  MY NAME IS WILLY |")
+    print("|     THE TROLL!!!  |")
+    print("'~~~~~~~~~~~~~~Ooo~~'")
+    print("        |__|__|      ")
+    print("         || ||       ")
+    print("        ooO Ooo      \n\n\n")
+
+def printUsmanPlane():
+    #   Function written by Usman Syed
+    print("""        __|__
+    \----(_)----/\n\n\n""")
+
+def printUsmanTree():
+    #   Function written by Usman Syed
+    print("""
+                  $$$ $$  $ $$
+          $$ $\/$\|$ O|/ @, $$
+          $\/(/$/$||/$ /_/)_$/_$
+       $O $\/$|O|/$\/ /$ / $ O
+      $_\_$$_\ |$ |$$/$__%_/_$ $$
+    $$   $$ $ $| $| /$ $ % O$ /$$
+     O$_---O$\$\|$$-$$--%---O~
+         $$     \|||
+                 |||
+                 |||
+                 |||
+                 |||
+             -=-~   -^- 
+    \n\n\n""")
 
 # *****************************************************************************************
 # FUNCTION:         stub (default for menu)
